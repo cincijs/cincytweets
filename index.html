@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cincy Tweets</title>
+  <script src='javascript/jquery-1.5.js' type="text/javascript"></script>
+  <script src='javascript/underscore.js' type="text/javascript"></script>
+  <script src='javascript/backbone.js' type="text/javascript"></script>
+  <script src='javascript/application.js' type="text/javascript"></script>
+  <link type='text/css' rel='stylesheet' href='css/screen.css' />
+</head>
+<body>
+  <!-- tweet App Interface -->
+  <div id="tweetapp">
+    <div class="title">
+      <h1>Tweets</h1>
+    </div>
+    <div class="content">
+      <div id="tweets">
+        <ul id="tweet-list"></ul>
+      </div>
+      <div id="tweet-stats"></div>
+    </div>
+  </div>
+
+  <!-- Templates -->
+
+  <script type="text/template" id="tweet-template">
+    <div class="tweet">
+      <div class="tweet-content"></div>
+      <span class="tweet-destroy"></span>
+    </div>
+  </script>
+
+  <script type="text/template" id="stats-template">
+    <% if (total) { %>
+      <span class="tweet-count">
+        <span class="number"><%= total %></span>
+        <span class="word"><%= total == 1 ? 'tweet' : 'tweets' %></span>.
+      </span>
+    <% } %>
+  </script>
+</body>
+</html>
