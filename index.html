@@ -12,22 +12,24 @@
   <!-- tweet App Interface -->
   <div id="tweetapp">
     <div class="title">
-      <h1>Tweets</h1>
+      <h1 id="tweet-stats">Cincy Tweets</h1>
     </div>
     <div class="content">
       <div id="tweets">
         <ul id="tweet-list"></ul>
       </div>
-      <div id="tweet-stats"></div>
+      <div id="map">
+      </div>
     </div>
+    <p id="credits"><a href="http://documentcloud.github.com/backbone/examples/todos/index.html">todos.js</a> by <a href="http://jgn.me/">J&eacute;r&ocirc;me Gravel-Niquet</a></div>
   </div>
 
   <!-- Templates -->
-
   <script type="text/template" id="tweet-template">
     <div class="tweet">
       <div class="tweet-content"></div>
-      <span class="tweet-destroy"></span>
+      <span class="user"></span>
+      <span class="timestamp"></span>
     </div>
   </script>
 

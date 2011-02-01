@@ -53,7 +53,11 @@ $(function() {
 
     setContent: function() {
       var content = this.model.get('text');
+      var user = this.model.get('from_user');
+      var created_at = this.model.get('created_at');
       this.$('.tweet-content').text(content);
+      this.$('.user').text(user);
+      this.$('.timestamp').text(created_at);
     }
   });
 
